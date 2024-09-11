@@ -11,9 +11,10 @@ import org.junit.jupiter.api.Test;
 import ar.edu.unq.poo2.CajaMercadoCentral.Caja;
 import ar.edu.unq.poo2.CajaMercadoCentral.Producto;
 import ar.edu.unq.poo2.CajaMercadoCentral.ProductoCooperativa;
+import ar.edu.unq.poo2.CajaMercadoCentral.Servicio;
 import ar.edu.unq.poo2.CajaMercadoCentral.Stock;
-
-class CajaTest {
+	
+class ServicioTest {
 	List<Producto> productos = new ArrayList<Producto>();
 	Stock stock = new Stock();
 	Producto p1 = new Producto("Arroz", 10.0);
@@ -30,15 +31,14 @@ class CajaTest {
 		this.productos.add(p2);
 		this.productos.add(p3);
 	}
+	
 
 	@Test
-	void precioTotalDeVentas() {
-		assertEquals(caja.precioTotalVenta(), 25.2);
-	}
-	@Test
-	void cantidadDeStockDespDeVender() {
-		assertEquals(caja.precioTotalVenta(), 25.2);
-		assertEquals(stock.totalProductos(), 0);
+	void registrarPagoRetornandoElMontoTotalDelServicio() {
+		
+		Servicio servicio = new Servicio(2.0, stock.getProductos().size() );
+		caja.registrarPago(servicio);
+		assertEquals(servicio.getCantidadTotalAPagar(), 6);
 	}
 
 }

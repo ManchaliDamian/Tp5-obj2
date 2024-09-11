@@ -1,8 +1,8 @@
 package ar.edu.unq.poo2.CajaMercadoCentral;
 
-public class ProductoCoperativa extends Producto{
+public class ProductoCooperativa extends Producto{
 
-	public ProductoCoperativa(String n, Double d) {
+	public ProductoCooperativa(String n, Double d) {
 		super(n, d);
 		this.descuento();
 	}

@@ -33,7 +33,9 @@ public class Caja {
 	public void setStockDisponible(Stock stockDisponible) {
 		this.stockDisponible = stockDisponible;
 	}
-
+	public void registrarPago(Agencia factura) {
+		factura.registrarPago(factura);
+	}
 
 
 }
