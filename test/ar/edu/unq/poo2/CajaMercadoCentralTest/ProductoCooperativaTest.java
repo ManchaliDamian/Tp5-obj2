@@ -5,10 +5,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unq.poo2.CajaMercadoCentral.ProductoCoperativa;
+import ar.edu.unq.poo2.CajaMercadoCentral.ProductoCooperativa;
 
 class ProductoCooperativaTest {
-	ProductoCoperativa p1 = new ProductoCoperativa("Arroz", 10.0);
+	ProductoCooperativa p1 = new ProductoCooperativa("Arroz", 10.0);
 	@BeforeEach
 	void setUp() throws Exception {
 	}

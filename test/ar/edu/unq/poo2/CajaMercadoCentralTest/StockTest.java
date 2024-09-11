@@ -6,14 +6,14 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import ar.edu.unq.poo2.CajaMercadoCentral.Producto;
-import ar.edu.unq.poo2.CajaMercadoCentral.ProductoCoperativa;
+import ar.edu.unq.poo2.CajaMercadoCentral.ProductoCooperativa;
 import ar.edu.unq.poo2.CajaMercadoCentral.Stock;
 
 class StockTest {
 	Stock stock = new Stock();
 	Producto p1 = new Producto("Arroz", 10.0);
 	Producto p2 = new Producto("Fideo", 8.0);
-	ProductoCoperativa p3 = new ProductoCoperativa("Fideo-cooperativa", 8.0);
+	ProductoCooperativa p3 = new ProductoCooperativa("Fideo-cooperativa", 8.0);
 	
 	@BeforeEach
 	void setUp() throws Exception {
