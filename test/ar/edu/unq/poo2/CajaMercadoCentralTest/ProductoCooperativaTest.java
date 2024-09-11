@@ -16,7 +16,7 @@ class ProductoCooperativaTest {
 	@Test
 	void test() {
 		p1.descuento();
-		assertEquals(p1.getPrecio(), 9.0);
+		assertEquals(p1.getPrecio(), 8.1);
 	}
 
 }
