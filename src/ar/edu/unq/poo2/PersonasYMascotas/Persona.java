@@ -3,7 +3,7 @@ package ar.edu.unq.poo2.PersonasYMascotas;
 import java.time.LocalDate;
 import java.time.Period;
 
-public class Persona {
+public class Persona implements Nombrable {
 	private String nombre;
 	private LocalDate fecNac;
 	public String getNombre() {
